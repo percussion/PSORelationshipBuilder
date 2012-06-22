@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/psolib/!svn/ver/4129/PSORelationshipBuilder/trunk/src/com/percussion/pso/relationshipbuilder/exit
+END
+PSAbstractBuildRelationshipsExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/psolib/!svn/ver/3561/PSORelationshipBuilder/trunk/src/com/percussion/pso/relationshipbuilder/exit/PSAbstractBuildRelationshipsExtension.java
+END
+PSBuildFolderRelationshipsExit.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/psolib/!svn/ver/3561/PSORelationshipBuilder/trunk/src/com/percussion/pso/relationshipbuilder/exit/PSBuildFolderRelationshipsExit.java
+END
+PSExtensionHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/psolib/!svn/ver/4129/PSORelationshipBuilder/trunk/src/com/percussion/pso/relationshipbuilder/exit/PSExtensionHelper.java
+END
+PSBuildAaRelationshipsExit.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/psolib/!svn/ver/3561/PSORelationshipBuilder/trunk/src/com/percussion/pso/relationshipbuilder/exit/PSBuildAaRelationshipsExit.java
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/psolib/!svn/ver/4176/PSORelationshipBuilder/trunk
+END
+build.number
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/psolib/!svn/ver/4174/PSORelationshipBuilder/trunk/build.number
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/psolib/!svn/ver/2301/PSORelationshipBuilder/trunk/ivy.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/psolib/!svn/ver/4173/PSORelationshipBuilder/trunk/ivysettings.xml
+END
+Install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/psolib/!svn/ver/3547/PSORelationshipBuilder/trunk/Install.bat
+END
+PSORelationshipBuilder.zip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/psolib/!svn/ver/4176/PSORelationshipBuilder/trunk/PSORelationshipBuilder.zip
+END
+deploy-share.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/psolib/!svn/ver/2284/PSORelationshipBuilder/trunk/deploy-share.xml
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/psolib/!svn/ver/2284/PSORelationshipBuilder/trunk/deploy.xml
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/psolib/!svn/ver/3301/PSORelationshipBuilder/trunk/readme.txt
+END
+Extensions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/psolib/!svn/ver/2284/PSORelationshipBuilder/trunk/Extensions.xml
+END
+build-share.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/psolib/!svn/ver/4061/PSORelationshipBuilder/trunk/build-share.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/psolib/!svn/ver/2284/PSORelationshipBuilder/trunk/build.xml
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/psolib/!svn/ver/3547/PSORelationshipBuilder/trunk/install.sh
+END
