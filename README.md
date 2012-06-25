@@ -1,6 +1,6 @@
 PSORelationshipBuilder
 ======================
-Relationship Builder
+[Percussion Software](http://www.percussion.com "Percussion Software")
 
 This project was created to have the ability to 
 add relationships through the content editor instead of the active assembly editors.
