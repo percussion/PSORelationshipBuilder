@@ -3,5 +3,50 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/PSORelationshipBuilder.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="ivylib/activation-1.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="ivylib/cglib-nodep-2.1.3.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-betwixt-0.7RC2-0.7.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-dbcp-1.2.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-fileupload-1.1.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-jexl-1.1.1-patched.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="ivylib/concurrent-1.3.2.jar"/>
+	<classpathentry kind="lib" path="ivylib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/ejb3-persistence-1.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/hibernate-annotations-3.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/hibernate3-3.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/javax.servlet-2.4.jar"/>
+	<classpathentry kind="lib" path="ivylib/jcr-1.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/jdbc2_0-stdext-2.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/jta-1.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/junit-4.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/percbeans-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/PSOToolkit-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rhythmyx-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxclient-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxextensions-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxff-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxinstall-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxmisctools-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxpublisher-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxserver-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxservices-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxtablefactory-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxutils-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/rxwebservices-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/saxon-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="ivylib/spring-2.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/Tidy-6.5.jar"/>
+	<classpathentry kind="lib" path="ivylib/xalan-2.7.0.jar"/>
+	<classpathentry kind="lib" path="ivylib/xercesImpl-2.8.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/xml-resolver-1.1.jar"/>
+	<classpathentry kind="lib" path="ivylib/xmlunit-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

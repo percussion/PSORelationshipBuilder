@@ -1,1 +1,5 @@
 /bin/
+/ivy-local.properties
+/PSORelationshipBuilder.zip
+/ivylib/
+/build/
