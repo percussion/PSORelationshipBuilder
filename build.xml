@@ -8,7 +8,7 @@
 	<!-- name of our output jar --> 
 	<property name="jarname" value="${ant.project.name}.jar" />	
 	<!-- name of our distribution zip -->
-	<property name="distfile" value="${ant.project.name}.zip" />	
+	<property name="distfile" value="build/${ant.project.name}.zip" />	
 
 	<import file="build-share.xml" />
 	

@@ -66,6 +66,7 @@
 	<target name="clean" unless="no-clean" description="clean up">
 		<delete dir="${build}"/>
 		<mkdir dir="${build}"/>
+		
 	</target>
 	
 	<target name="compile-java" description="compile the source ">
@@ -154,7 +155,7 @@
 		description="generate the distribution">	
 		<property name="ziplibdir" value="${ant.project.name}/lib"/>
 		<property name="zipbasedir" value="${ant.project.name}"/>
-		<zip destfile="${dist-file}">
+		<zip destfile="build/${dist-file}">
 			<zipfileset dir="${build-jars}" includes="*.jar" prefix="${zipbasedir}/lib" />
 			<zipfileset dir="${src}" prefix="${zipbasedir}/src">
 				<include name="**"/>

@@ -54,25 +54,6 @@ public class PSBuildAaRelationshipsExit extends PSAbstractBuildRelationshipsExte
      * content items become its parents. The details of the relationship are
      * provided as parameters (relationship type, slot id, and variant id).
      * 
-     * @param paramMap
-     *            three expected parameters, all required:
-     *            <ul>
-     *            <li>
-     *            <dt>fieldname</dt>
-     *            <dd>name of content editor field that contains desired parent
-     *            ids</dd>
-     *            </li>
-     *            <li>
-     *            <dt>slotname</dt>
-     *            <dd>name of slot whose parents will be synchronized to match
-     *            field value</dd>
-     *            </li>
-     *            <li>
-     *            <dt>templatename</dt>
-     *            <dd>name of template that will be assigned to created
-     *            relationships</dd>
-     *            </li>
-     *            </ul>
      * @param request
      *            the current request context, not <code>null</code>..
      * @return a {@link IPSRelationshipBuilder}

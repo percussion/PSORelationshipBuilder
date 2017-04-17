@@ -20,8 +20,8 @@
 	   <artifact name="PSORelationshipBuilder" type="jar" />
 	</publications>
 	<dependencies>
-	  <dependency org="percussion" name="rhythmyx" rev="6.5"  />
-	  <dependency org="percussion" name="pso-toolkit" rev="6.5">
+	  <dependency org="percussion" name="rhythmyx" rev="7.3.0"  />
+	  <dependency org="percussion" name="pso-toolkit" rev="7.0">
 	  	<exclude name="commons-httpclient"/>
 	  </dependency>
 	  
