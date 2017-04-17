@@ -2,6 +2,8 @@ PSORelationshipBuilder
 ======================
 [Percussion Software](http://www.percussion.com "Percussion Software")
 
+Download the latest snapshot (built for Rhythmyx 7.3.x) [http://cdn.percussion.com/downloads/open/psorelationshipbuilder/pso-relationship-builder-SNAPSHOT.zip](http://cdn.percussion.com/downloads/open/psorelationshipbuilder/pso-relationship-builder-SNAPSHOT.zip)
+
 This project was created to have the ability to 
 add relationships through the content editor instead of the active assembly editors.
 
