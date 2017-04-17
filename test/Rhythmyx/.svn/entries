@@ -2,7 +2,7 @@
 
 dir
 5292
-http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/tags/Xilinx/test/Rhythmyx
+http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/tags/pre-ivy/test/Rhythmyx
 http://foo.percussion.local/svn/psolib
 
 
@@ -26,13 +26,19 @@ agent
 
 5b51286b-3300-0410-a02b-d9c68bf7162b
 
+ObjectStore
+dir
+
+AppServer
+dir
+
 RhythmyxServer.ja
 file
 
 
 
 
-2012-06-22T21:09:17.264421Z
+2012-06-22T21:09:18.996430Z
 f7d6e87c9a71741530c42a467ddaecba
 2006-12-14T17:56:14.379885Z
 1096
@@ -61,11 +67,5 @@ has-props
 61
 
 rxconfig
-dir
-
-ObjectStore
-dir
-
-AppServer
 dir
 

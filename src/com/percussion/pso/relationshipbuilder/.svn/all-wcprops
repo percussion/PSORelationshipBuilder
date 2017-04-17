@@ -1,59 +1,53 @@
 K 25
 svn:wc:ra_dav:version-url
-V 103
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder
+V 104
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder
 END
-PSDependentRelationshipBuilder.java
+PSActiveAssemblyRelationshipBuilder.java
 K 25
 svn:wc:ra_dav:version-url
-V 139
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSDependentRelationshipBuilder.java
+V 145
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSActiveAssemblyRelationshipBuilder.java
 END
-PSExtractDependentIdsFromSlotExit.java
+PSFolderRelationshipBuilder.java
 K 25
 svn:wc:ra_dav:version-url
-V 142
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSExtractDependentIdsFromSlotExit.java
+V 137
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSFolderRelationshipBuilder.java
 END
-PSRelationshipBuilderExitHelper.java
-K 25
-svn:wc:ra_dav:version-url
-V 140
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSRelationshipBuilderExitHelper.java
-END
-PSRelationshipBuilderExitHelperTest.java
-K 25
-svn:wc:ra_dav:version-url
-V 144
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSRelationshipBuilderExitHelperTest.java
-END
-PSOwnerRelationshipBuilder.java
-K 25
-svn:wc:ra_dav:version-url
-V 135
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSOwnerRelationshipBuilder.java
-END
-PSExtractOwnerIdsFromSlotExit.java
+PSAaOwnerRelationshipBuilder.java
 K 25
 svn:wc:ra_dav:version-url
 V 138
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSExtractOwnerIdsFromSlotExit.java
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSAaOwnerRelationshipBuilder.java
 END
-PSBuildDependentRelationshipsFromIdsExit.java
+IPSRelationshipHelperService.java
 K 25
 svn:wc:ra_dav:version-url
-V 149
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSBuildDependentRelationshipsFromIdsExit.java
+V 138
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/IPSRelationshipHelperService.java
 END
 PSAbstractRelationshipBuilder.java
 K 25
 svn:wc:ra_dav:version-url
-V 138
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSAbstractRelationshipBuilder.java
+V 139
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSAbstractRelationshipBuilder.java
 END
-PSBuildOwnerRelationshipsFromIdsExit.java
+IPSRelationshipBuilder.java
 K 25
 svn:wc:ra_dav:version-url
-V 145
-/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src/com/percussion/pso/relationshipbuilder/PSBuildOwnerRelationshipsFromIdsExit.java
+V 132
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/IPSRelationshipBuilder.java
+END
+PSAaDependentRelationshipBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSAaDependentRelationshipBuilder.java
+END
+PSRelationshipHelperService.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/psolib/!svn/ver/2285/PSORelationshipBuilder/tags/pre-ivy/src/com/percussion/pso/relationshipbuilder/PSRelationshipHelperService.java
 END

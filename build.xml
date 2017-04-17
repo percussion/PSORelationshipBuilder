@@ -74,7 +74,8 @@
 			<include name="org/**" />
 			<include name="javax/**" />	
 			<include name="com/percussion/pso/**"/>
-			<exclude name="com/percussion/pso/**/*Test.class" /> 
+			<exclude name="com/percussion/pso/**/*Test.class" />
+			<exclude name="test/**" />
 			<exclude name="log4j.properties" /> 
 			<include name="build.properties" /> 
 			<include name="readme.txt" />
@@ -97,12 +98,6 @@
 	
 	<target name="install" description="installs">
 		<fail unless="env.RHYTHMYX_HOME" message="You must set the RHYTHMYX_HOME environment variable"/>
-		<echo>Copying Jar files to ${rx_lib_extras}</echo>
-		<copy overwrite="false" todir="${rx_lib_extras}">
-			<fileset dir="${lib}">
-				<include name="*.jar"/>
-			</fileset>
-		</copy>
 		<copy failonerror="false" overwrite="true" file="${build}/${jarname}" todir="${rx_lib_extras}" />
 		<echo>Installing Extensions to ${rx_home}</echo>
 		<antcall target="installExtensions"/>
@@ -126,18 +121,18 @@
 		<antcall target="jarbuilder"/>
 		<property name="ziplibdir" value="${ant.project.name}/lib"/>
 		<property name="zipbasedir" value="${ant.project.name}"/>
-		<zip destfile="${distfile}">						
-			<zipfileset dir="${lib}" includes="**.jar" prefix="${ziplibdir}" /> 
-			<zipfileset dir="${build}" includes="**.jar" prefix="${ziplibdir}" /> 
+		<zip destfile="${distfile}">
+			<zipfileset dir="${build}" includes="**.jar" prefix="${zipbasedir}" />
 			<zipfileset dir="${src}" prefix="${zipbasedir}/src">
 				<include name="com/percussion/pso/**"/>
 			</zipfileset>
 			<zipfileset dir="." prefix="${zipbasedir}">
-				<include name="readme.txt, Extensions.xml, pso_template.xsl"/>
+				<include name="Extensions.xml"/>
+				<include name="readme.txt"/>
 				<include name="build.number"/>
+				<include name="build.xml"/>
 			</zipfileset>
-			<zipfileset dir="${apidoc}" prefix="${zipbasedir}/javadoc"/>			
-			<!--<fileset dir="Rhythmyx" includes="**"/>-->
+			<zipfileset dir="${apidoc}" prefix="${zipbasedir}/javadoc"/>
 		</zip>
 			
 	</target>

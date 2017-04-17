@@ -2,7 +2,7 @@
 
 dir
 5292
-http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/tags/Xilinx/test/Rhythmyx/AppServer/server/rx/conf
+http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/tags/pre-ivy/test/Rhythmyx/AppServer/server/rx/conf
 http://foo.percussion.local/svn/psolib
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2012-06-22T21:09:17.200421Z
+2012-06-22T21:09:18.992430Z
 07fd6594175a5be738087b8440deb396
 2006-12-14T17:56:14.379885Z
 1096
