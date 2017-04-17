@@ -1,11 +1,5 @@
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svn/psolib/!svn/ver/2281/PSORelationshipBuilder/branches/ivy/src
-END
-log4j.properties
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/psolib/!svn/ver/2281/PSORelationshipBuilder/branches/ivy/src/log4j.properties
+V 64
+/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/src
 END

@@ -1,11 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 100
-/svn/psolib/!svn/ver/2281/PSORelationshipBuilder/branches/ivy/test/Rhythmyx/AppServer/server/rx/conf
+V 99
+/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/test/Rhythmyx/AppServer/server/rx/conf
 END
 log4j.xml
 K 25
 svn:wc:ra_dav:version-url
-V 110
-/svn/psolib/!svn/ver/2281/PSORelationshipBuilder/branches/ivy/test/Rhythmyx/AppServer/server/rx/conf/log4j.xml
+V 109
+/svn/psolib/!svn/ver/1718/PSORelationshipBuilder/tags/Xilinx/test/Rhythmyx/AppServer/server/rx/conf/log4j.xml
 END

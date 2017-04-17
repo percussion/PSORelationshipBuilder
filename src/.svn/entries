@@ -2,14 +2,14 @@
 
 dir
 5292
-http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/branches/ivy/src
+http://foo.percussion.local/svn/psolib/PSORelationshipBuilder/tags/Xilinx/src
 http://foo.percussion.local/svn/psolib
 
 
 
-2008-01-11T22:32:32.498730Z
-2061
-agent
+2007-07-18T20:24:06.516160Z
+1694
+sbolton
 
 
 
@@ -28,41 +28,4 @@ agent
 
 com
 dir
-
-test
-dir
-
-log4j.properties
-file
-
-
-
-
-2012-06-22T21:09:14.072405Z
-2cb968aead8781c299a458ae4b531023
-2008-01-11T19:04:50.839914Z
-2058
-agent
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-650
 
