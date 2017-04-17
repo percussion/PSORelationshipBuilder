@@ -77,7 +77,7 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
             m_contentWs = PSContentWsLocator.getContentWebservice();
         if (m_guidManager == null)
             m_guidManager = PSGuidManagerLocator.getGuidMgr();
-        if (m_contentManager == null);
+        if (m_contentManager == null)
             m_contentManager = PSContentMgrLocator.getContentMgr();
     }
     
