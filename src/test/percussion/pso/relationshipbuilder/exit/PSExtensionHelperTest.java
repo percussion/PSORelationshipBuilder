@@ -117,10 +117,6 @@ public class PSExtensionHelperTest extends TestCase
                     throws PSAssemblyException, PSException {
 
             }
-            
-            public void addRelationships(Collection<Integer> ids)
-					throws PSAssemblyException, PSException {
-			}
 
         };
        PSExtensionHelper helper = new PSExtensionHelper(builder, params, null);
@@ -153,10 +149,6 @@ public class PSExtensionHelperTest extends TestCase
                throw new IllegalStateException("Should not be called");
                
            }
-           
-           public void addRelationships(Collection<Integer> ids)
-					throws PSAssemblyException, PSException {
-			}
           
       };
       

@@ -73,7 +73,7 @@ public abstract class PSAbstractRelationshipBuilder implements
             Set<Integer> idsToAdd = createComplement(targetIds,
                     currentRelatedIds);
             ms_log.debug("\tadd ids: " + idsToAdd);
-            add(sourceId, idsToAdd);
+            add(sourceId, targetIds);
             // current - desired = remove
             Set<Integer> idsToRemove = createComplement(currentRelatedIds,
                     targetIds);
@@ -119,17 +119,8 @@ public abstract class PSAbstractRelationshipBuilder implements
             IPSRelationshipHelperService relationshipHelper) {
         m_relationshipHelperService = relationshipHelper;
     }
-    
-    
 
-    public void addRelationships(Collection<Integer> ids)
-			throws PSAssemblyException, PSException
-	{
-		ms_log.debug("addRelationships in PSAbstractRelationshipBuilder does nothing");
-		
-	}
-
-	/**
+    /**
      * The log instance to use for this class, never <code>null</code>.
      */
     private static final Log ms_log = LogFactory

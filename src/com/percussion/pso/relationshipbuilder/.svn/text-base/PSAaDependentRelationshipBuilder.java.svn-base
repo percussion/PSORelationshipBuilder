@@ -31,7 +31,24 @@ public class PSAaDependentRelationshipBuilder
     extends PSActiveAssemblyRelationshipBuilder
 {
    
-	public PSAaDependentRelationshipBuilder() {
-		setParent(false);	
-	}
+   @Override
+   public void add(int sourceId, Collection<Integer> targetIds) throws PSAssemblyException,
+           PSException {
+       m_relationshipHelperService.addRelationships(targetIds, singleton(sourceId),
+                m_slotName, m_templateName);
+
+   }
+
+   @Override
+   public void delete(int sourceId, Collection<Integer> targetIds) throws PSException {
+       m_relationshipHelperService.deleteRelationships(targetIds, singleton(sourceId),
+                m_slotName, m_templateName);
+
+   }
+
+   public Collection<Integer> retrieve(int sourceId) throws PSException {
+       return m_relationshipHelperService.getOwners(sourceId, m_slotName,
+               m_templateName);
+   }
+
 }

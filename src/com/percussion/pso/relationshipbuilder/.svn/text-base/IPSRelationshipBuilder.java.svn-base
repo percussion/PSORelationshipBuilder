@@ -45,7 +45,4 @@ public interface IPSRelationshipBuilder {
     public abstract void synchronize(int sourceId, Set<Integer> targetIds) throws PSAssemblyException,
             PSException;
 
-    
-    public void addRelationships(Collection<Integer> ids) throws PSAssemblyException, PSException;
-
 }

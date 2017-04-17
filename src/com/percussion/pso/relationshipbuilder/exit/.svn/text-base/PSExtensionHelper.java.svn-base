@@ -2,7 +2,6 @@ package com.percussion.pso.relationshipbuilder.exit;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
@@ -117,59 +116,28 @@ public class PSExtensionHelper
                && displayChoicesNodes.getLength() == 1 
                ? (Element) displayChoicesNodes.item(0) : null;
            if (displayChoicesElement == null) {
-               ms_log.debug("No DisplayChoice Elements. Checking for Value e.g. multi value no child table, ; separated");
-               NodeList valueNodes = controlElement.getElementsByTagName("Value");
-               if (valueNodes.getLength() > 0) {
-            	  String itemList = valueNodes.item(0).getTextContent();
-            	  ms_log.debug("Found selections " + itemList);
-            	  String replacementString = "";
-            	  for (int id : ids) {
-            		  if (replacementString.length() >0 ) replacementString+=";";
-            		  replacementString += id;
-            	  }
-            	  ms_log.debug("Replacing with ids " + replacementString);
-            	  valueNodes.item(0).setTextContent(replacementString);
-               }
-               
-               
+               ms_log.warn("No DisplayChoice Elements.");
            }
            else {
                if (ms_log.isTraceEnabled()) {
                    String xml = PSXmlDocumentBuilder.toString(displayChoicesElement);
-                   ms_log.trace("Nabeel changes...");
                    ms_log.trace("Display Choices XML: " + xml);
                }
-               ms_log.debug("Displayed choice... ");
                NodeList displayEntryNodes = 
                    displayChoicesElement.getElementsByTagName("DisplayEntry");
-               ms_log.debug("Got display entry elements, there are:  " + displayEntryNodes.getLength());
                for(int i = 0; displayEntryNodes != null 
                    && i < displayEntryNodes.getLength(); i++) {
                    Element displayEntryElement = (Element) displayEntryNodes.item(i);
-                   ms_log.debug("displayEntryElement: " + displayEntryElement);
-                   ms_log.debug("selectALL: " + selectAll);
+                   
                    if (selectAll) {
                        displayEntryElement.setAttribute("selected", "yes");
                    }
                    else {
                        String idString = displayEntryElement
                            .getElementsByTagName("Value").item(0).getTextContent();
-                       ms_log.debug("idString: " + idString);
-                       int id = 0;
-                       
-                      //When the Aging Agent tries to move an item from Public, it tends to fail when the DisplayEntry element
-                      //is null which it tends to be
-                      try
-                      {
-                    	   id = Integer.parseInt(idString);
-                      }
-                      catch (NumberFormatException nfe)
-                      {
-                    	   ms_log.warn("The value for the control is not appropriately formatted or is not a number. Using 0.");
-                    	   id = 0;
-                      }
-                      
+                       int id = Integer.parseInt(idString);
                        if (ids.contains(id)) {
+                           ms_log.trace("Selecting display entry with id: " + id);
                            displayEntryElement.setAttribute("selected", "yes");   
                        }
                    }
@@ -308,7 +276,6 @@ public class PSExtensionHelper
              fieldValuesSet);
        if (invalid.size() == 1 && invalid.contains("")) {
            ms_log.debug("\tEmpty String only.  No items checked.  Removing relationships");
-           m_builder.synchronize(cid, fieldValuesSet);
        }
        else if (invalid.size() != 0) {
           ms_log.debug("\tInvalid id(s) were passed. Not building any relationships");
@@ -331,10 +298,6 @@ public class PSExtensionHelper
    }
    
    public static boolean isRequestToBeProcessedForBuilding(IPSRequestContext request) {
-       Map<String, String> noParams = new HashMap<String, String>();
-       PSOExtensionParamsHelper helper = new PSOExtensionParamsHelper(noParams,request,null);
-       Number contentId = helper.getOptionalParameterAsNumber(IPSHtmlParameters.SYS_CONTENTID, 
-               "0");
        String command = request.getParameter(IPSHtmlParameters.SYS_COMMAND);
        String page = request
              .getParameter(PSContentEditorHandler.PAGE_ID_PARAM_NAME);
@@ -342,7 +305,6 @@ public class PSExtensionHelper
              .getParameter(IPSHtmlParameters.SYS_INLINELINK_DATA_UPDATE);
 
        return (page != null
-             && contentId.intValue() != 0
              && command.equals(PSModifyCommandHandler.COMMAND_NAME)
              && page.equals(String
                    .valueOf(PSQueryCommandHandler.ROOT_PARENT_PAGE_ID))
@@ -350,17 +312,12 @@ public class PSExtensionHelper
    }
    
    public static boolean isRequestToBeProcessedForSelecting(IPSRequestContext request) {
-       Map<String, String> noParams = new HashMap<String, String>();
-       PSOExtensionParamsHelper helper = new PSOExtensionParamsHelper(noParams,request,null);
-       Number contentId = helper.getOptionalParameterAsNumber(IPSHtmlParameters.SYS_CONTENTID, 
-               "0");
        String command = request.getParameter(IPSHtmlParameters.SYS_COMMAND);
        String page = request
              .getParameter(PSContentEditorHandler.PAGE_ID_PARAM_NAME);
        String processInlineLink = request
              .getParameter(IPSHtmlParameters.SYS_INLINELINK_DATA_UPDATE);
        return (page != null
-             && contentId.intValue() != 0
              && command.equals(PSEditCommandHandler.COMMAND_NAME)
              && page.equals(String
                    .valueOf(PSQueryCommandHandler.ROOT_PARENT_PAGE_ID))
@@ -410,11 +367,6 @@ public class PSExtensionHelper
       }
       if (inputIds != null)
       {
-    	 if (inputIds.length == 1 ) {
-    		 //split up ; separated value
-    		 inputIds = inputIds[0].toString().split(";");
-    		 
-    	 }
          for (int i = 0; i < inputIds.length; i++)
          {
             Object contentId = inputIds[i];

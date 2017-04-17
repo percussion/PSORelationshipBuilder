@@ -101,7 +101,7 @@ public class PSBuildAaRelationshipsExit extends PSAbstractBuildRelationshipsExte
               extParams.errorOnParameter(SOURCE_ITEM_TYPE_PARAM, 
                       "sourceItemType must either be 'OWNER' or 'DEPENDENT'");
         }
-        //builder.setRelationshipHelperService(getRelationshipHelperService());
+        builder.setRelationshipHelperService(getRelationshipHelperService());
         builder.setSlotName(slotName);
         builder.setTemplateName(templateName);
         return builder;

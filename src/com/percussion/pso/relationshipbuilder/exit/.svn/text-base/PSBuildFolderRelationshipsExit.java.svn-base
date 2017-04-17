@@ -25,7 +25,7 @@ public class PSBuildFolderRelationshipsExit extends PSAbstractBuildRelationships
         log.debug( mode + " Folder Relationships");
         PSOExtensionParamsHelper extParams = new PSOExtensionParamsHelper(paramMap, request, log);
         PSFolderRelationshipBuilder builder = new PSFolderRelationshipBuilder();
-       // builder.setRelationshipHelperService(getRelationshipHelperService());
+        builder.setRelationshipHelperService(getRelationshipHelperService());
         String jcrQuery = extParams.getRequiredParameter("jcrQuery");
         builder.setJcrQuery(jcrQuery);
         return builder;

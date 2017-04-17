@@ -237,15 +237,12 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
         IPSTemplateSlot slot = findSlot(slotName);
         validateSlot(slot);
         Collection<PSLocator> ownerLocators = asLocators(ownerIds);
-        Collection<PSLocator> dependentLocators = asLocatorsNoRev(dependentIds);
+        Collection<PSLocator> dependentLocators = asLocators(dependentIds);
         Collection<PSRelationship> relationshipSet = createEmptyRelationshipCollection();
         for (PSLocator ownerLoc : ownerLocators) {
             for (PSLocator dependentLoc : dependentLocators) {
                 PSAaRelationship newRelationship = new PSAaRelationship(ownerLoc,
                         dependentLoc, slot, template);
-                ms_log.debug("Adding relationsion Owner id="+ownerLoc.getId()+" Owner Revision="+ownerLoc.getRevision());
-                ms_log.debug("Adding relationsion Dependent id="+dependentLoc.getId()+" Dependent Revision="+dependentLoc.getRevision());
-                
                 relationshipSet.add(newRelationship);
             }
         }
@@ -349,7 +346,7 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
        Collection<PSComponentSummary> summaries = cms.loadComponentSummaries(ids);
        for (PSComponentSummary sum : summaries)
        {
-          PSLocator loc = sum.getTipLocator(); 
+          PSLocator loc = sum.getHeadLocator();
           idLocators.add(loc);
        }
        return idLocators;
@@ -357,22 +354,6 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
     
     protected List<PSLocator> asLocators(Integer... ids) {
         return asLocators(Arrays.asList(ids));
-    }
-    
-    
-    protected List<PSLocator> asLocatorsNoRev(Collection<Integer> ids)
-    {
-       List<PSLocator> idLocators = new ArrayList<PSLocator>(ids.size());
-       for (Integer id : ids)
-       {
-          PSLocator loc = new PSLocator(id);
-          idLocators.add(loc);
-       }
-       return idLocators;
-    }
-    
-    protected List<PSLocator> asLocatorsNoRev(Integer... ids) {
-        return asLocatorsNoRev(Arrays.asList(ids));
     }
     
     protected List<IPSGuid> asGuids(Collection<Integer> ids) {
@@ -391,7 +372,6 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
      * @param trueKeepOnlyIdsFalseRemoveOnlyIds
      * @param trueOwnerIdsFalseDependentIds
      */
-    @SuppressWarnings("unchecked")
     private void filterRelationships(Collection<PSRelationship> relationships,
           Collection<Integer> ids, 
           boolean trueKeepOnlyIdsFalseRemoveOnlyIds,
@@ -484,11 +464,6 @@ public class PSRelationshipHelperService implements IPSRelationshipHelperService
             Collection<Integer> dependents, 
             String slotName, String templateName) throws PSException {
         try {
-            if (owners.isEmpty() || dependents.isEmpty()) {
-                ms_log.debug("Not deleting relationships because " +
-                        "either dependents or owners ids is empty");
-                return;
-            }
             ms_log.debug("Deleting relationships where " +
                     opMessage(owners,dependents,slotName,templateName));
             deleteRelationships(getRelationships(owners, dependents, slotName, templateName));

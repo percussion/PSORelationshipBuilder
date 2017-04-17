@@ -168,8 +168,6 @@
 				<include name="license.txt"/>
 				<include name="deploy-share.xml"/>
 				<include name="deploy.xml"/>
-				<include name="install.bat" /> 
-			    <include name="install.sh" /> 
 			</zipfileset>
 			<zipfileset dir="${build-apidoc}" prefix="${zipbasedir}/javadoc"/>
 		</zip>	
@@ -204,7 +202,7 @@
     
    	-->
 	
-	<property name="ivy.local.default.root" value="/ivyrepo"/>
+	<property name="ivy.local.default.root" value="../ivyrepo"/>
 	<property name="ivy-module-version-target" value="1.0"/>
 	<property name="ivy.file" value="ivy.xml" />
 	

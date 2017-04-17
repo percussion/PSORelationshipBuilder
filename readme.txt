@@ -5,10 +5,10 @@ add relationships through the content editor instead of the active assembly edit
 
 Installation:
  
-  1. Download and install Apache ant if you have not done so already. 
-  2. Set the environment variable RHYTHMYX_HOME to your Rhythmyx directory.
+  1. Download and install apache ant if you have not done so already. 
+  2. Set the evironment variable RHYTHMYX_HOME to your Rhythmyx directory.
   3. Run the command:
-      ant -f deploy.xml
+      ant install
      While in the Relationship Builder directory.
   
   

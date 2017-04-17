@@ -21,9 +21,7 @@
 	</publications>
 	<dependencies>
 	  <dependency org="percussion" name="rhythmyx" rev="6.5"  />
-	  <dependency org="percussion" name="pso-toolkit" rev="6.5">
-	  	<exclude name="commons-httpclient"/>
-	  </dependency>
+	  <dependency org="percussion" name="pso-toolkit" rev="6.5" />
 	  
 	  <!-- add any other dependencies here -->
 	  <!-- make sure you have some unit tests -->

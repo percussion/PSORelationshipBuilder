@@ -28,7 +28,23 @@ import com.percussion.services.assembly.PSAssemblyException;
  */
 public class PSAaOwnerRelationshipBuilder extends PSActiveAssemblyRelationshipBuilder {
 
-	public PSAaOwnerRelationshipBuilder() {
-		setParent(true);	
-	}
+    @Override
+    public void add(int sourceId, Collection<Integer> targetIds) throws PSAssemblyException,
+            PSException {
+        m_relationshipHelperService.addRelationships(singleton(sourceId),
+                targetIds, m_slotName, m_templateName);
+
+    }
+
+    @Override
+    public void delete(int sourceId, Collection<Integer> targetIds) throws PSException {
+        m_relationshipHelperService.deleteRelationships(singleton(sourceId),
+                targetIds, m_slotName, m_templateName);
+
+    }
+
+    public Collection<Integer> retrieve(int sourceId) throws PSException {
+        return m_relationshipHelperService.getDependents(sourceId, m_slotName,
+                m_templateName);
+    }
 }

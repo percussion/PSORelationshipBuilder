@@ -24,7 +24,7 @@ import com.percussion.extension.PSExtensionProcessingException;
 import com.percussion.extension.PSParameterMismatchException;
 import com.percussion.pso.relationshipbuilder.IPSRelationshipBuilder;
 import com.percussion.pso.relationshipbuilder.IPSRelationshipHelperService;
-//import com.percussion.pso.relationshipbuilder.PSRelationshipHelperService;
+import com.percussion.pso.relationshipbuilder.PSRelationshipHelperService;
 import com.percussion.pso.utils.PSOExtensionParamsHelper;
 import com.percussion.server.IPSRequestContext;
 
@@ -32,7 +32,7 @@ public abstract class PSAbstractBuildRelationshipsExtension extends PSDefaultExt
     implements IPSUdfProcessor, IPSFieldOutputTransformer, IPSResultDocumentProcessor, IPSItemOutputTransformer {
     
     private static final String MODE_INIT_PARAM = "com.percussion.extension.relationshipbuilder.mode";
-    //private static IPSRelationshipHelperService m_relationshipHelperService;
+    private static IPSRelationshipHelperService m_relationshipHelperService;
     private Mode m_mode;
     /**
      * The log instance to use for this class, never <code>null</code>.
@@ -45,11 +45,11 @@ public abstract class PSAbstractBuildRelationshipsExtension extends PSDefaultExt
     @Override
     public void init(IPSExtensionDef def, File codeRoot) throws PSExtensionException {
         super.init(def, codeRoot);
-       /* if (m_relationshipHelperService == null) {
+        if (m_relationshipHelperService == null) {
             PSRelationshipHelperService helper = new PSRelationshipHelperService();
             helper.init();
             m_relationshipHelperService = helper;
-        }*/
+        }
         String mode = def.getInitParameter(MODE_INIT_PARAM);
         String validValues = " it should be either " + Mode.BUILD + " or " + Mode.SELECT;
         if (mode == null) {
@@ -76,7 +76,7 @@ public abstract class PSAbstractBuildRelationshipsExtension extends PSDefaultExt
         
     }
 
-  /*  public IPSRelationshipHelperService getRelationshipHelperService() {
+    public IPSRelationshipHelperService getRelationshipHelperService() {
         return m_relationshipHelperService;
     }
 
@@ -84,7 +84,7 @@ public abstract class PSAbstractBuildRelationshipsExtension extends PSDefaultExt
             IPSRelationshipHelperService relationshipHelperService) {
         m_relationshipHelperService = relationshipHelperService;
     }
-    */
+    
     public boolean canModifyStyleSheet() {
         // TODO Auto-generated method stub
         return false;
