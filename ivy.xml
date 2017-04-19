@@ -9,7 +9,7 @@
         module="pso-relationshipbuilder"
         revision="1.0" 
         status="release">
-    <description homepage="http://agent">Relationship Builder add relationships through the content editor instead of the active assembly editors. </description>
+    <description homepage="http://www.github.com/percussion/PSORelationshipBuilder">Relationship Builder add relationships through the content editor instead of the active assembly editors. </description>
 	</info>
 	<configurations>
 	   <conf name="default" description="provides standard JAR for use with Server" />

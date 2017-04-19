@@ -73,7 +73,7 @@
 		<mkdir dir="${ivylib}" />
         <mkdir dir="${build-classes}" />
 		<javac srcdir="${src}" destdir="${build-classes}" 
-			debug="true" source="1.5" classpathref="classpath-all"/>
+			debug="true" source="1.6" classpathref="classpath-all"/>
 		<copy todir="${build-classes}">
     		<fileset dir="${src}">
       			<include name="**/*.xml"/>

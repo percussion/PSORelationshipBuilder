@@ -1,4 +1,4 @@
-<project name="Shared Rhythmyx 6 Solution Install" default="importMe" basedir=".">
+<project name="Shared Rhythmyx Solution Install" default="importMe" basedir=".">
 	<description>
 		Shared Rhythmyx Solution Install properties
     </description>
@@ -11,8 +11,8 @@
 	<property name="rhythmyx.js" value="${rhythmyx.home}/rx_resources/js"/>
 	<property name="rhythmyx.vm" value="${rhythmyx.home}/rx_resources/vm"/>
 	<property name="rhythmyx.lib" value="${rhythmyx.WEB-INF}/lib"/>
-	<property name="rhythmyx.pub" value="${rhythmyx.home}/AppServer/server/rx/deploy/RxServices.war"/>
-	<property name="rhythmyx.pub.lib" value="${rhythmyx.home}/AppServer/server/rx/deploy/RxServices.war/WEB-INF/lib"/>
+	<property name="rhythmyx.pub" value="${rhythmyx.home}/AppServer/server/rx/deploy/rxapp.ear/rxapp.war"/>
+	<property name="rhythmyx.pub.lib" value="${rhythmyx.home}/AppServer/server/rx/deploy/rxapp.ear/rxapp.war/lib"/>
 	<property name="rhythmyx.pub.WEB-INF" value="${rhythmyx.pub}/WEB-INF"/>
 	<!-- relative paths -->
 	<property name="lib" location="lib"/>
@@ -95,27 +95,19 @@
 			<arg value="${basedir}"/>
 			<classpath>
 			    <fileset dir="${rhythmyx.lib}">
-			    	<include name="rxserver.jar"/>
-			    	<include name="rxclient.jar"/> 
-			    	<include name="rxutils.jar" />
-			    	<include name="rxservices.jar" />
-			    	<include name="commons-lang*.jar"/> 
-			    	<include name="jcr*.jar" /> 
-			    	<include name="commons-logging*.jar" /> 
-			    	<include name="commons-collections*.jar" /> 
-			    	<include name="commons-httpclient*.jar" /> 
+			    	<include name="*.jar"/>
 				</fileset>
 			    <fileset dir="${rhythmyx.home}/AppServer/lib/endorsed" >
 				    <include name="xml-apis.jar" />
 			    </fileset>
 				<fileset dir="${rhythmyx.home}/AppServer/server/rx/lib">
-					<include name="javax.servlet.jar" /> 
+					<include name="*.jar" /> 
 		    	</fileset>				
 			</classpath>	
 		</java>
 	</target>
 	
-	<target name="spring-pub">
+<!--	<target name="spring-pub">
 		<mkdir dir="${rhythmyx.pub.WEB-INF}/config/spring"/>
 		<copy todir="${rhythmyx.pub.WEB-INF}/config/spring" verbose="true">
 			<fileset dir="rx/RxServices.war/WEB-INF/config/spring">
@@ -123,9 +115,9 @@
 			</fileset>
 		</copy>
 	</target>
-	
+-->	
 	<target name="importMe">
-		<fail message="Dont run this ant script. Import it into the real deploy and make sure to depend on the rx task."/>
+		<fail message="Don't run this ant script. Import it into the real deploy and make sure to depend on the rx task."/>
 	</target>
 
 </project>

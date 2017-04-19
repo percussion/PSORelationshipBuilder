@@ -57,11 +57,6 @@ public class PSBuildAaRelationshipsExit extends PSAbstractBuildRelationshipsExte
      * @param request
      *            the current request context, not <code>null</code>..
      * @return a {@link IPSRelationshipBuilder}
-     * @throws PSParameterMismatchException, PSExtensionProcessingException 
-     * @throws PSParameterMismatchException
-     *             if any required parameter is blank.
-     * @throws PSExtensionProcessingException
-     *             if the assembly or relationship APIs report an error.
      */
     @Override
     public IPSRelationshipBuilder createRelationshipBuilder(Map<String, String> paramMap, 

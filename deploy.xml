@@ -1,6 +1,6 @@
-<project name="Rhythmyx 6 Install Extensions" default="install" basedir=".">
+<project name="Rhythmyx Install Extensions" default="install" basedir=".">
 	<description>
-       Install extensions on a Rhythmyx 6 server  
+       Install extensions on a Rhythmyx server  
 	   The RHYTHMYX_HOME environment variable must be set 
     </description>
 	
