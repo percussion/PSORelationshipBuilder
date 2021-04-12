@@ -1,3 +1,5 @@
+# This project has been Archived.  The exits can be found in the CMS 8.0.3 perc-toolkit
+
 PSORelationshipBuilder
 ======================
 [Percussion Software](http://www.percussion.com "Percussion Software")
